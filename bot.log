@@ -205,3 +205,8 @@ Traceback (most recent call last):
 TypeError: 'NoneType' object is not callable
 INFO (24/03/2024 03:27:42): Update id=968309469 is handled. Duration 280 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
 INFO (24/03/2024 03:27:46): Update id=968309470 is handled. Duration 92 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 03:29:05): Инициализация... (Line: 13) [bot_handler.py]
+INFO (24/03/2024 03:29:05): Инициализировано! (Line: 18) [bot_handler.py]
+INFO (24/03/2024 03:29:05): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 03:29:05): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 03:29:06): Update id=968309471 is handled. Duration 296 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
