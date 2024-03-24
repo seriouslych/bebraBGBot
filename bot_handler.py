@@ -1,12 +1,17 @@
 import asyncio
+
 from aiogram import Bot, Dispatcher, F
 from aiogram.filters import Command
+from aiogram.types import Message
+
 from log import log
-from start import *
-from bebra import *
+
+from commands.bebra import *
+from commands.start import *
 
 token = '6464094470:AAF57DSStRaFNz6O8mlSGzntsK864wgGvUI'
 log.info("Инициализация...")
+
 try:
     bot = Bot(token)
     dp = Dispatcher()
@@ -14,6 +19,7 @@ try:
 
     async def main():
         await dp.start_polling(bot)
+
 except Exception as e:
     log.exception(e)
 
@@ -25,18 +31,15 @@ async def start(message: Message):
 
 @dp.message(Command('pid'))
 async def pid(message: Message):
-    try:
-        await pid_message(message)
-        log.info(f"[@{message.from_user.username}] Отправлен ID изображения.")
-    except Exception as e:
-        log.exception(e)
-
+    await pid_message(message)
 
 @dp.message(F.photo)
-async def pid_get(message: Message):
-    replied_message = message.reply_to_message
-    if replied_message and replied_message.photo:
-        await message.reply(f"ID фото: <code>{message.photo[-1].file_id}</code>", parse_mode='html')
+async def pid_start(message: Message):
+    await pid_handler(message)
+    
+@dp.message(Command('bebra'))
+async def bebra(message: Message):
+    await bebra_message(message)
 
 
 if __name__ == '__main__':

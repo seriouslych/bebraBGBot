@@ -1,50 +1,207 @@
-INFO (23/03/2024 01:58:07): Update id=968309304 is not handled. Duration 0 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
-INFO (23/03/2024 01:58:10): Polling stopped (Line: 554) [dispatcher.py]
-INFO (23/03/2024 01:58:10): Polling stopped for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 359) [dispatcher.py]
-INFO (23/03/2024 01:58:12): Инициализация... (Line: 9) [bot_handler.py]
-INFO (23/03/2024 01:58:12): Инициализировано! (Line: 13) [bot_handler.py]
-INFO (23/03/2024 01:58:12): Start polling (Line: 527) [dispatcher.py]
-INFO (23/03/2024 01:58:12): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
-INFO (23/03/2024 01:58:14): [@alexanderseriously] Отправлен ID изображения. (Line: 29) [bot_handler.py]
-INFO (23/03/2024 01:58:14): Update id=968309305 is handled. Duration 297 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
-INFO (23/03/2024 01:58:18): Update id=968309306 is not handled. Duration 15 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
-INFO (23/03/2024 01:59:07): Polling stopped (Line: 554) [dispatcher.py]
-INFO (23/03/2024 01:59:07): Polling stopped for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 359) [dispatcher.py]
-INFO (23/03/2024 01:59:09): Инициализация... (Line: 9) [bot_handler.py]
-INFO (23/03/2024 01:59:09): Инициализировано! (Line: 13) [bot_handler.py]
-INFO (23/03/2024 01:59:09): Start polling (Line: 527) [dispatcher.py]
-INFO (23/03/2024 01:59:09): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
-INFO (23/03/2024 01:59:11): [@alexanderseriously] Отправлен ID изображения. (Line: 30) [bot_handler.py]
-INFO (23/03/2024 01:59:11): Update id=968309307 is handled. Duration 296 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
-INFO (23/03/2024 01:59:17): Update id=968309308 is not handled. Duration 0 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
-INFO (23/03/2024 02:01:14): Polling stopped (Line: 554) [dispatcher.py]
-INFO (23/03/2024 02:01:14): Polling stopped for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 359) [dispatcher.py]
-INFO (23/03/2024 02:01:16): Инициализация... (Line: 9) [bot_handler.py]
-INFO (23/03/2024 02:01:16): Инициализировано! (Line: 13) [bot_handler.py]
-INFO (23/03/2024 02:01:16): Start polling (Line: 527) [dispatcher.py]
-INFO (23/03/2024 02:01:16): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
-INFO (23/03/2024 02:01:22): [@alexanderseriously] Отправлен ID изображения. (Line: 30) [bot_handler.py]
-INFO (23/03/2024 02:01:22): Update id=968309309 is handled. Duration 405 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
-INFO (23/03/2024 02:01:24): Update id=968309310 is handled. Duration 0 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
-INFO (23/03/2024 02:03:28): Polling stopped (Line: 554) [dispatcher.py]
-INFO (23/03/2024 02:03:29): Polling stopped for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 359) [dispatcher.py]
-INFO (23/03/2024 02:03:31): Инициализация... (Line: 9) [bot_handler.py]
-INFO (23/03/2024 02:03:31): Инициализировано! (Line: 13) [bot_handler.py]
-INFO (23/03/2024 02:03:31): Start polling (Line: 527) [dispatcher.py]
-INFO (23/03/2024 02:03:31): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
-INFO (23/03/2024 02:03:34): [@alexanderseriously] Отправлен ID изображения. (Line: 30) [bot_handler.py]
-INFO (23/03/2024 02:03:34): Update id=968309311 is handled. Duration 407 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
-INFO (23/03/2024 02:03:36): Update id=968309312 is handled. Duration 0 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
-INFO (23/03/2024 02:03:52): Polling stopped (Line: 554) [dispatcher.py]
-INFO (23/03/2024 02:03:52): Polling stopped for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 359) [dispatcher.py]
-INFO (23/03/2024 02:17:52): Инициализация... (Line: 9) [bot_handler.py]
-INFO (23/03/2024 02:17:53): Инициализировано! (Line: 13) [bot_handler.py]
-INFO (23/03/2024 02:17:53): Start polling (Line: 527) [dispatcher.py]
-INFO (23/03/2024 02:17:53): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
-INFO (23/03/2024 02:17:54): [@pidor228dickchlen] Отправлена помощь. (Line: 24) [bot_handler.py]
-INFO (23/03/2024 02:17:54): Update id=968309313 is handled. Duration 438 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
-INFO (23/03/2024 02:17:54): [@pidor228dickchlen] Отправлена помощь. (Line: 24) [bot_handler.py]
-INFO (23/03/2024 02:17:54): Update id=968309314 is handled. Duration 438 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
-INFO (23/03/2024 02:20:29): Update id=968309315 is not handled. Duration 0 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
-INFO (23/03/2024 02:22:45): Polling stopped (Line: 554) [dispatcher.py]
-INFO (23/03/2024 02:22:45): Polling stopped for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 359) [dispatcher.py]
+INFO (24/03/2024 03:25:06): Инициализация... (Line: 12) [bot_handler.py]
+INFO (24/03/2024 03:25:06): Инициализировано! (Line: 17) [bot_handler.py]
+INFO (24/03/2024 03:25:06): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 03:25:07): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 03:25:07): Update id=968309464 is not handled. Duration 0 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 03:25:07): Update id=968309465 is not handled. Duration 0 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 03:25:07): Cause exception while process update id=968309465 by bot id=6464094470
+NameError: name 'bebra_message' is not defined (Line: 315) [dispatcher.py]
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\bot_handler.py", line 41, in bebra
+    await bebra_message(message)
+          ^^^^^^^^^^^^^
+NameError: name 'bebra_message' is not defined
+INFO (24/03/2024 03:25:13): Update id=968309466 is not handled. Duration 0 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 03:25:13): Cause exception while process update id=968309466 by bot id=6464094470
+NameError: name 'bebra_message' is not defined (Line: 315) [dispatcher.py]
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\bot_handler.py", line 41, in bebra
+    await bebra_message(message)
+          ^^^^^^^^^^^^^
+NameError: name 'bebra_message' is not defined
+INFO (24/03/2024 03:26:17): Инициализация... (Line: 13) [bot_handler.py]
+INFO (24/03/2024 03:26:17): Инициализировано! (Line: 18) [bot_handler.py]
+INFO (24/03/2024 03:26:17): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 03:26:18): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 03:26:36): Update id=968309467 is not handled. Duration 0 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 03:26:36): Cause exception while process update id=968309467 by bot id=6464094470
+TypeError: 'NoneType' object is not callable (Line: 315) [dispatcher.py]
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\bot_handler.py", line 42, in bebra
+    await bebra_message(message)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\bebra.py", line 21, in bebra_message
+    await message.photo(photo='AgACAgIAAxkBAAPMZgABJpre-9PZ17lwwAiukPREkCeiAAKT4DEbS6MBSD2ayU5F5mS1AQADAgADeQADNAQ', caption='bebra')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not callable
+INFO (24/03/2024 03:27:37): Инициализация... (Line: 13) [bot_handler.py]
+INFO (24/03/2024 03:27:38): Инициализировано! (Line: 18) [bot_handler.py]
+INFO (24/03/2024 03:27:38): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 03:27:38): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 03:27:38): Update id=968309468 is not handled. Duration 0 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 03:27:38): Cause exception while process update id=968309468 by bot id=6464094470
+TypeError: 'NoneType' object is not callable (Line: 315) [dispatcher.py]
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\bot_handler.py", line 42, in bebra
+    await bebra_message(message)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\bebra.py", line 21, in bebra_message
+    await message.photo(photo='AgACAgIAAxkBAAPMZgABJpre-9PZ17lwwAiukPREkCeiAAKT4DEbS6MBSD2ayU5F5mS1AQADAgADeQADNAQ', caption='bebra')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not callable
+INFO (24/03/2024 03:27:42): Update id=968309469 is handled. Duration 280 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 03:27:46): Update id=968309470 is handled. Duration 92 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
