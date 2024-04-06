@@ -1,0 +1,438 @@
+INFO (24/03/2024 06:47:12): Инициализация... (Line: 26) [bot_handler.py]
+INFO (24/03/2024 06:47:12): Инициализировано! (Line: 31) [bot_handler.py]
+INFO (24/03/2024 06:47:12): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 06:47:12): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 06:47:13): Update id=968309570 is handled. Duration 344 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 06:47:15): Update id=968309571 is not handled. Duration 0 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 06:47:15): Cause exception while process update id=968309571 by bot id=6464094470
+UnboundLocalError: cannot access local variable 'reply_sticker' where it is not associated with a value (Line: 315) [dispatcher.py]
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 156, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\sticker.py", line 17, in sticker_handler
+    if message.reply_to_message and reply_sticker:
+                                    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'reply_sticker' where it is not associated with a value
+INFO (24/03/2024 06:48:11): Инициализация... (Line: 26) [bot_handler.py]
+INFO (24/03/2024 06:48:11): Инициализировано! (Line: 31) [bot_handler.py]
+INFO (24/03/2024 06:48:11): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 06:48:11): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 06:48:12): Update id=968309572 is handled. Duration 297 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 06:48:14): Update id=968309573 is not handled. Duration 0 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 06:48:14): Cause exception while process update id=968309573 by bot id=6464094470
+UnboundLocalError: cannot access local variable 'reply_sticker' where it is not associated with a value (Line: 315) [dispatcher.py]
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 156, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\sticker.py", line 18, in sticker_handler
+    if message.reply_to_message and reply_sticker:
+                                    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'reply_sticker' where it is not associated with a value
+INFO (24/03/2024 06:50:57): Инициализация... (Line: 26) [bot_handler.py]
+INFO (24/03/2024 06:50:57): Инициализировано! (Line: 31) [bot_handler.py]
+INFO (24/03/2024 06:50:57): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 06:50:58): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 06:50:58): Update id=968309574 is handled. Duration 265 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 06:51:02): Update id=968309575 is not handled. Duration 0 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 06:51:02): Cause exception while process update id=968309575 by bot id=6464094470
+UnboundLocalError: cannot access local variable 'reply_sticker' where it is not associated with a value (Line: 315) [dispatcher.py]
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 156, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\sticker.py", line 18, in sticker_handler
+    if message.reply_to_message and reply_sticker:
+                                    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'reply_sticker' where it is not associated with a value
+INFO (24/03/2024 06:52:34): Инициализация... (Line: 26) [bot_handler.py]
+INFO (24/03/2024 06:52:34): Инициализировано! (Line: 31) [bot_handler.py]
+INFO (24/03/2024 06:52:34): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 06:52:34): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 06:52:36): Update id=968309576 is handled. Duration 1061 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 06:52:38): 'PhotoSize' object has no attribute 'download_file' (Line: 23) [sticker.py]
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\pydantic\main.py", line 753, in __getattr__
+    return pydantic_extra[item]
+           ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'download_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\sticker.py", line 21, in sticker_handler
+    await sticker_get(message)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\sticker.py", line 29, in sticker_get
+    photo_path = await photo.download_file(destination_file=f'/temp/{photo.file_id}.jpg')
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\pydantic\main.py", line 755, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}') from exc
+AttributeError: 'PhotoSize' object has no attribute 'download_file'
+INFO (24/03/2024 06:52:38): Update id=968309577 is handled. Duration 14 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 06:56:37): Инициализация... (Line: 25) [bot_handler.py]
+INFO (24/03/2024 06:56:37): Инициализировано! (Line: 30) [bot_handler.py]
+INFO (24/03/2024 06:56:37): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 06:56:37): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 06:56:41): Update id=968309578 is handled. Duration 405 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 06:56:44): [Errno 2] No such file or directory: '/temp/AgACAgIAAxkBAAIBSWYAAVtlDQk9zDuXE9Wuu_gxmGlqMwAC7-ExG0ujAUi4Khidv0lYCQEAAwIAA3gAAzQE.jpg' (Line: 71) [bot_handler.py]
+Traceback (most recent call last):
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\bot_handler.py", line 69, in sticker_handler
+    await sticker_get(message)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\bot_handler.py", line 78, in sticker_get
+    photo_path = await bot.download(photo, destination=f'/temp/{photo.file_id}.jpg')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\bot.py", line 479, in download
+    return await self.download_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\bot.py", line 434, in download_file
+    await self.__download_file(destination=destination, stream=stream)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\bot.py", line 382, in __download_file
+    async with aiofiles.open(destination, "wb") as f:
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiofiles\base.py", line 98, in __aenter__
+    self._obj = await self._coro
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiofiles\threadpool\__init__.py", line 94, in _open
+    f = yield from loop.run_in_executor(executor, cb)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/temp/AgACAgIAAxkBAAIBSWYAAVtlDQk9zDuXE9Wuu_gxmGlqMwAC7-ExG0ujAUi4Khidv0lYCQEAAwIAA3gAAzQE.jpg'
+INFO (24/03/2024 06:56:44): Update id=968309579 is handled. Duration 139 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 06:59:48): Инициализация... (Line: 25) [bot_handler.py]
+INFO (24/03/2024 06:59:49): Инициализировано! (Line: 30) [bot_handler.py]
+INFO (24/03/2024 06:59:49): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 06:59:50): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 06:59:50): Update id=968309580 is handled. Duration 358 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 06:59:53): Update id=968309581 is handled. Duration 234 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 07:00:22): Инициализация... (Line: 25) [bot_handler.py]
+INFO (24/03/2024 07:00:22): Инициализировано! (Line: 30) [bot_handler.py]
+INFO (24/03/2024 07:00:22): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 07:00:23): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 07:00:23): Update id=968309582 is handled. Duration 359 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 07:00:27): 'NoneType' object has no attribute 'read' (Line: 47) [sticker.py]
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\Image.py", line 3251, in open
+    fp.seek(0)
+    ^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'seek'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\sticker.py", line 15, in sticker_convert
+    image = Image.open(photo_path)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\Image.py", line 3253, in open
+    fp = io.BytesIO(fp.read())
+                    ^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'read'
+INFO (24/03/2024 07:00:27): Update id=968309583 is handled. Duration 594 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 07:12:27): Инициализация... (Line: 25) [bot_handler.py]
+INFO (24/03/2024 07:12:28): Инициализировано! (Line: 30) [bot_handler.py]
+INFO (24/03/2024 07:12:28): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 07:12:28): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 07:12:41): Update id=968309584 is handled. Duration 359 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 07:12:44): exists: path should be string, bytes, os.PathLike or integer, not NoneType (Line: 52) [sticker.py]
+Traceback (most recent call last):
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\sticker.py", line 15, in sticker_convert
+    if not os.path.exists(photo_path):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: exists: path should be string, bytes, os.PathLike or integer, not NoneType
+INFO (24/03/2024 07:12:44): Update id=968309585 is handled. Duration 375 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 07:14:19): Инициализация... (Line: 25) [bot_handler.py]
+INFO (24/03/2024 07:14:19): Инициализировано! (Line: 30) [bot_handler.py]
+INFO (24/03/2024 07:14:19): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 07:14:19): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 07:14:25): Update id=968309586 is handled. Duration 563 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 07:14:30): Путь к фото не задан (Line: 15) [sticker.py]
+ERROR (24/03/2024 07:14:30): exists: path should be string, bytes, os.PathLike or integer, not NoneType (Line: 71) [bot_handler.py]
+Traceback (most recent call last):
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\bot_handler.py", line 69, in sticker_handler
+    await sticker_get(message)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\bot_handler.py", line 81, in sticker_get
+    await sticker_convert(photo_path, sticker_path, message)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\sticker.py", line 17, in sticker_convert
+    if not os.path.exists(photo_path):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: exists: path should be string, bytes, os.PathLike or integer, not NoneType
+INFO (24/03/2024 07:14:30): Update id=968309587 is handled. Duration 734 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 07:15:25): Инициализация... (Line: 25) [bot_handler.py]
+INFO (24/03/2024 07:15:25): Инициализировано! (Line: 30) [bot_handler.py]
+INFO (24/03/2024 07:15:25): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 07:15:25): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 07:15:26): Update id=968309588 is handled. Duration 296 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 07:15:28): 'NoneType' object has no attribute 'read' (Line: 47) [sticker.py]
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\Image.py", line 3251, in open
+    fp.seek(0)
+    ^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'seek'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\sticker.py", line 15, in sticker_convert
+    image = Image.open(photo_path)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\Image.py", line 3253, in open
+    fp = io.BytesIO(fp.read())
+                    ^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'read'
+INFO (24/03/2024 07:15:28): Update id=968309589 is handled. Duration 312 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 07:20:36): Инициализация... (Line: 25) [bot_handler.py]
+INFO (24/03/2024 07:20:36): Инициализировано! (Line: 30) [bot_handler.py]
+INFO (24/03/2024 07:20:36): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 07:20:36): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 07:20:37): Update id=968309590 is handled. Duration 390 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 07:20:41): 'NoneType' object has no attribute 'read' (Line: 47) [sticker.py]
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\Image.py", line 3251, in open
+    fp.seek(0)
+    ^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'seek'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\sticker.py", line 15, in sticker_convert
+    image = Image.open(photo_path)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\Image.py", line 3253, in open
+    fp = io.BytesIO(fp.read())
+                    ^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'read'
+INFO (24/03/2024 07:20:41): Update id=968309591 is handled. Duration 360 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 07:22:19): Инициализация... (Line: 25) [bot_handler.py]
+INFO (24/03/2024 07:22:19): Инициализировано! (Line: 30) [bot_handler.py]
+INFO (24/03/2024 07:22:19): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 07:22:19): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 07:22:23): Update id=968309592 is handled. Duration 296 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 07:22:25): [Errno 13] Permission denied: 'D:/!Projects/Bots/Telegram/bebraBGBot/temp/' (Line: 47) [sticker.py]
+Traceback (most recent call last):
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\sticker.py", line 40, in sticker_convert
+    cropped_image.save(sticker_path, "PNG")
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\Image.py", line 2436, in save
+    fp = builtins.open(filename, "w+b")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'D:/!Projects/Bots/Telegram/bebraBGBot/temp/'
+INFO (24/03/2024 07:22:25): Update id=968309593 is handled. Duration 453 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 07:23:03): Инициализация... (Line: 25) [bot_handler.py]
+INFO (24/03/2024 07:23:03): Инициализировано! (Line: 30) [bot_handler.py]
+INFO (24/03/2024 07:23:03): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 07:23:03): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 07:23:12): Update id=968309594 is handled. Duration 264 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 07:23:15): aiogram.methods.delete_message.DeleteMessage() got multiple values for keyword argument 'message_id' (Line: 47) [sticker.py]
+Traceback (most recent call last):
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\sticker.py", line 44, in sticker_convert
+    await message.delete(message_id=message.message_id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\types\message.py", line 3677, in delete
+    return DeleteMessage(
+           ^^^^^^^^^^^^^^
+TypeError: aiogram.methods.delete_message.DeleteMessage() got multiple values for keyword argument 'message_id'
+INFO (24/03/2024 07:23:15): Update id=968309595 is handled. Duration 530 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 07:27:38): Инициализация... (Line: 25) [bot_handler.py]
+INFO (24/03/2024 07:27:38): Инициализировано! (Line: 30) [bot_handler.py]
+INFO (24/03/2024 07:27:38): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 07:27:38): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 07:28:57): Update id=968309596 is handled. Duration 359 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 07:29:02): Update id=968309597 is handled. Duration 454 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 07:29:32): Инициализация... (Line: 25) [bot_handler.py]
+INFO (24/03/2024 07:29:32): Инициализировано! (Line: 30) [bot_handler.py]
+INFO (24/03/2024 07:29:32): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 07:29:32): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 07:29:52): Update id=968309598 is handled. Duration 453 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 07:29:56): Telegram server says - Bad Request: invalid file HTTP URL specified: Wrong port number specified in the URL (Line: 46) [sticker.py]
+Traceback (most recent call last):
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\sticker.py", line 42, in sticker_convert
+    await sticker_send(message, sticker_path)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\sticker.py", line 49, in sticker_send
+    await message.answer_document(document=sticker_path)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\session\aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: invalid file HTTP URL specified: Wrong port number specified in the URL
+INFO (24/03/2024 07:29:56): Update id=968309599 is handled. Duration 1140 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 07:39:44): Инициализация... (Line: 25) [bot_handler.py]
+INFO (24/03/2024 07:39:44): Инициализировано! (Line: 30) [bot_handler.py]
+INFO (24/03/2024 07:39:44): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 07:39:44): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 07:39:52): Update id=968309600 is handled. Duration 563 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 07:39:56): 'FSInputFile' object has no attribute 'write' (Line: 46) [sticker.py]
+Traceback (most recent call last):
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\sticker.py", line 40, in sticker_convert
+    cropped_image.save(sticker_path, "PNG")
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\Image.py", line 2439, in save
+    save_handler(self, fp, filename)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\PngImagePlugin.py", line 1287, in _save
+    fp.write(_MAGIC)
+    ^^^^^^^^
+AttributeError: 'FSInputFile' object has no attribute 'write'
+INFO (24/03/2024 07:39:56): Update id=968309601 is handled. Duration 625 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+INFO (24/03/2024 07:44:15): Инициализация... (Line: 25) [bot_handler.py]
+INFO (24/03/2024 07:44:15): Инициализировано! (Line: 30) [bot_handler.py]
+INFO (24/03/2024 07:44:15): Start polling (Line: 527) [dispatcher.py]
+INFO (24/03/2024 07:44:15): Run polling for bot @dotabebrabasbot id=6464094470 - 'bebraBot-Test' (Line: 341) [dispatcher.py]
+INFO (24/03/2024 07:44:16): Update id=968309602 is handled. Duration 312 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 07:44:19): 'FSInputFile' object has no attribute 'write' (Line: 46) [sticker.py]
+Traceback (most recent call last):
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\sticker.py", line 40, in sticker_convert
+    cropped_image.save(sticker_path, "PNG")
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\Image.py", line 2439, in save
+    save_handler(self, fp, filename)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\PngImagePlugin.py", line 1287, in _save
+    fp.write(_MAGIC)
+    ^^^^^^^^
+AttributeError: 'FSInputFile' object has no attribute 'write'
+INFO (24/03/2024 07:44:19): Update id=968309603 is handled. Duration 421 ms by bot id=6464094470 (Line: 172) [dispatcher.py]
+ERROR (24/03/2024 07:59:12): Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error (Line: 219) [dispatcher.py]
+WARNING (24/03/2024 07:59:12): Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6464094470) (Line: 221) [dispatcher.py]
+INFO (24/03/2024 07:59:24): Connection established (tryings = 1, bot id = 6464094470) (Line: 233) [dispatcher.py]

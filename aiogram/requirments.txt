@@ -1,0 +1,6 @@
+aiogram
+asyncio
+python-dotenv
+sqlalchemy
+logging
+pillow
