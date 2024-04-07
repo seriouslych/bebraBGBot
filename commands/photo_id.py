@@ -1,6 +1,5 @@
-def photo_id_message(bot, message, waiting_for_pid, cancel_inline):
+def photo_id_message(bot, message, cancel_inline):
     bot.reply_to(message, "🏞 Отправь мне изображение в ответ, чтобы узнать её ID", reply_markup=cancel_inline)
-    waiting_for_pid[message.chat.id] = True
 
 def photo_id_send(bot, message):
     pid = message.photo[-1].file_id
