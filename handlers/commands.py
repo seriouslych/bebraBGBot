@@ -7,10 +7,10 @@ from commands.test import test_message
 
 from handlers.keyboards import cancel_inline
 
-def commands(bot, base_dir):
+def commands(bot, base_dir, log):
     @bot.message_handler(commands=['start', 'help'], content_types=['text'])
     def start(message):
-        start_message(bot, message)
+        start_message(bot, message, log)
         
     @bot.message_handler(commands=['pid'])
     def photo_id(message):
@@ -22,15 +22,15 @@ def commands(bot, base_dir):
         
     @bot.message_handler(commands=['uid'])
     def uid(message):
-        uid_message(bot, message)
+        uid_message(bot, message, log)
     
     @bot.message_handler(commands=['bebra'])
     def bebra(message):
-        bebra_message(bot, message)
+        bebra_message(bot, message, log)
         
     @bot.message_handler(commands=['t'])
     def test(message):
-        test_message(bot, message)
+        test_message(bot, message, log)
         
     @bot.message_handler(content_types=['text', 'photo'])
     def reply_check(message):
@@ -40,13 +40,13 @@ def commands(bot, base_dir):
             if message.reply_to_message.text == "🏞 Отправь мне изображение в ответ, чтобы узнать её ID":
                 if replied_message.text:
                     if message.photo:
-                        photo_id_send(bot, message)
+                        photo_id_send(bot, message, log)
                     else:
                         photo_id_except(bot, message)
                         
             if message.reply_to_message.text == "🏞 Отправь мне изображение в ответ, чтобы обработать её как стикер":
                 if replied_message.text:
                     if message.photo:
-                        photo_stk_get(bot, message, base_dir)
+                        photo_stk_get(bot, message, base_dir, log)
                     else:
                         photo_stk_except(bot, message)

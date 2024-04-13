@@ -6,9 +6,10 @@ from PIL import Image
 def sticker_message(bot, message, cancel_inline):
     bot.reply_to(message, "🏞 Отправь мне изображение в ответ, чтобы обработать её как стикер", reply_markup=cancel_inline)
     
-def photo_stk_get(bot, message, base_dir):
+def photo_stk_get(bot, message, base_dir, log):
     get = bot.reply_to(message, "🛜 Получение изображения...")
     
+    log.info(f"[@{message.from_user.username}] - Обработка стикера...")
     try:
         file_info = bot.get_file(message.photo[-1].file_id)
         photo_download = bot.download_file(file_info.file_path)
@@ -26,16 +27,16 @@ def photo_stk_get(bot, message, base_dir):
         time.sleep(1)
         process = bot.edit_message_text("🔄 Обработка изображения...", message.chat.id, got.message_id)
         
-        photo_process(bot, message, input_path, output_path, process)
+        photo_process(bot, message, input_path, output_path, process, log)
         
     except Exception as e:
         bot.edit_message_text(message.chat.id, get.message_id, "❌ Ошибка получения изображения!")
-        print(e)
+        log.exception("Ошибка скачивания фото: ", e)
     
 def photo_stk_except(bot, message):
     bot.reply_to(message, "Отправь мне изображение в ответ, балбес")
     
-def photo_process(bot, message, input_path, output_path, process):
+def photo_process(bot, message, input_path, output_path, process, log):
     try:
         # Открываем изображение
         image = Image.open(input_path)
@@ -65,15 +66,19 @@ def photo_process(bot, message, input_path, output_path, process):
         # Сохраняем обработанное изображение
         cropped_image.save(output_path, "PNG")
         
-        photo_stk_send(bot, message, input_path, output_path, process)
+        photo_stk_send(bot, message, input_path, output_path, process, log)
 
     except Exception as e:
         print(f"Произошла ошибка: {e}")
         
-def photo_stk_send(bot, message, input_path, output_path, process):
+def photo_stk_send(bot, message, input_path, output_path, process, log):
     bot.edit_message_text("✅ Готово!", message.chat.id, process.message_id)
-    with open(output_path, 'rb') as doc:
-        bot.send_document(message.chat.id, doc)
+    try:
+        with open(output_path, 'rb') as doc:
+            bot.send_document(message.chat.id, doc)
+        log.info(f"[@{message.from_user.username}] - Стикер обработан и отправлен.")
+    except Exception as e:
+        log.exception("Ошибка отправки фото: ", e)
 
     os.remove(input_path)
     os.remove(output_path)

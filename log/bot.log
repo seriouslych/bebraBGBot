@@ -1,0 +1,24 @@
+INFO (13/04/2024 06:27:53): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 06:28:00): [@alexanderseriously] - Узнал свой ID: '1113584569' (Line: 5) [user_id.py]
+ERROR (13/04/2024 06:28:03): Infinity polling exception: test_message() missing 1 required positional argument: 'log' (Line: 1021) [__init__.py]
+ERROR (13/04/2024 06:28:03): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1016, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1104, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1179, in __threaded_polling
+    raise e
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\handlers\commands.py", line 33, in test
+    test_message(bot, message)
+TypeError: test_message() missing 1 required positional argument: 'log'
+ (Line: 1023) [__init__.py]

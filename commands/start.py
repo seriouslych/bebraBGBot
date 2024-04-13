@@ -6,7 +6,7 @@ load_dotenv()
 
 version = os.getenv('version')
 
-def start_message(bot, message):
+def start_message(bot, message, log):
     bot.reply_to(message,
             f"""
 <code>BebraBGBot - v{version}</code>
@@ -21,3 +21,5 @@ def start_message(bot, message):
     /stk - преобразование изображения в размер подходящий для стикера
             """,
                 parse_mode='html')
+    
+    log.info(f"[@{message.from_user.username}] - Запустил бота / Использовал помощь")

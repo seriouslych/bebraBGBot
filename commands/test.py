@@ -6,7 +6,7 @@ load_dotenv()
 
 version = os.getenv('version')
 
-def test_message(bot, message):
+def test_message(bot, message, log):
     bot.reply_to(message,
 f"""
 <code>TEST</code>
@@ -18,3 +18,5 @@ f"""
 <code>bebraBGBot {version}</code>
 """, parse_mode='html'
 )
+
+    log.info(f"[@{message.from_user.username}] - TEST - BebraBGBot v{version}")
