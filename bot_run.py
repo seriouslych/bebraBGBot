@@ -7,6 +7,6 @@ from handlers.callbacks import callback
 log.info("BebraBGBot запущен...")
 
 commands(bot, base_dir, log)
-callback(bot)
+callback(bot, log)
 
 bot.infinity_polling()

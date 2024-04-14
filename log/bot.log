@@ -24,3 +24,245 @@ TypeError: test_message() missing 1 required positional argument: 'log'
  (Line: 1023) [__init__.py]
 INFO (13/04/2024 06:28:30): BebraBGBot запущен... (Line: 7) [bot_run.py]
 INFO (13/04/2024 06:28:35): [@alexanderseriously] - TEST - BebraBGBot v0.5 alpha (Line: 22) [test.py]
+INFO (13/04/2024 06:33:36): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 06:33:41): [@alexanderseriously] - TEST - BebraBGBot v0.6 alpha (Line: 22) [test.py]
+INFO (13/04/2024 06:33:44): [@alexanderseriously] - Узнал свой ID: '1113584569' (Line: 5) [user_id.py]
+INFO (13/04/2024 06:34:53): [@alexanderseriously] - Узнал ID фото: 'AgACAgIAAxkBAAICtGYapi_r4bPNw8WKbmncm73h-q25AAIs2DEbL2rYSLKSJiDAGJ0EAQADAgADeAADNAQ' (Line: 8) [photo_id.py]
+INFO (13/04/2024 06:35:03): [@alexanderseriously] - Обработка стикера... (Line: 12) [sticker.py]
+INFO (13/04/2024 06:35:03): [@vAm_pir3] - Запустил бота / Использовал помощь (Line: 25) [start.py]
+INFO (13/04/2024 06:35:07): [@alexanderseriously] - Стикер обработан и отправлен. (Line: 79) [sticker.py]
+INFO (13/04/2024 06:35:11): [@vAm_pir3] - Запустил бота / Использовал помощь (Line: 25) [start.py]
+INFO (13/04/2024 06:35:17): [@vAm_pir3] - Узнал свой ID: '7190785997' (Line: 5) [user_id.py]
+INFO (13/04/2024 06:35:19): [@vAm_pir3] - Набебрил. (Line: 6) [bebra.py]
+INFO (13/04/2024 06:47:20): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 06:50:33): BebraBGBot запущен... (Line: 7) [bot_run.py]
+ERROR (13/04/2024 06:50:59): Infinity polling exception: The function yandex() has been not certified yet. Please read for details: Status of Translator on this webpage(https://github.com/UlionTse/translators#supported-translation-services). (Line: 1021) [__init__.py]
+ERROR (13/04/2024 06:50:59): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 2206, in get_sid
+    sid_find = re.compile("SID: '(.*?)',").findall(host_html)[0]
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 296, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 117, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 288, in _wrapper
+    return func(*args, **{**kwargs, **{'query_text': query_text}})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 2281, in yandex_api
+    self.sid = self.get_sid(host_html)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 2212, in get_sid
+    raise TranslatorError(str(e))
+translators.server.TranslatorError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1016, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1104, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1179, in __threaded_polling
+    raise e
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\handlers\commands.py", line 38, in translate
+    translate_message(bot, message, log)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\translate.py", line 6, in translate_message
+    tr_result = ts.translate_text(tr_msg, to_language='ru', translator='yandex')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 5469, in translate_text
+    return self.translators_dict[translator](query_text=query_text, from_language=from_language, to_language=to_language, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 301, in _wrapper
+    raise TranslatorError(f'{raise_tips1} {raise_tips2}')
+translators.server.TranslatorError: The function yandex() has been not certified yet. Please read for details: Status of Translator on this webpage(https://github.com/UlionTse/translators#supported-translation-services).
+ (Line: 1023) [__init__.py]
+INFO (13/04/2024 06:51:39): BebraBGBot запущен... (Line: 7) [bot_run.py]
+ERROR (13/04/2024 06:51:55): Infinity polling exception: 429 Client Error:  for url: https://www2.deepl.com/jsonrpc?method=LMT_handle_jobs (Line: 1021) [__init__.py]
+ERROR (13/04/2024 06:51:55): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1016, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1104, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1179, in __threaded_polling
+    raise e
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\handlers\commands.py", line 38, in translate
+    translate_message(bot, message, log)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\translate.py", line 6, in translate_message
+    tr_result = ts.translate_text(tr_msg, to_language='ru', translator='deepl')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 5469, in translate_text
+    return self.translators_dict[translator](query_text=query_text, from_language=from_language, to_language=to_language, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 117, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 288, in _wrapper
+    return func(*args, **{**kwargs, **{'query_text': query_text}})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 2157, in deepl_api
+    r_cs.raise_for_status()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error:  for url: https://www2.deepl.com/jsonrpc?method=LMT_handle_jobs
+ (Line: 1023) [__init__.py]
+INFO (13/04/2024 06:52:50): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 06:53:06): [@EpitaphDK] - Отправлен перевод (Line: 10) [translate.py]
+INFO (13/04/2024 06:53:10): [@alexanderseriously] - Отправлен перевод (Line: 10) [translate.py]
+INFO (13/04/2024 06:53:35): [@EpitaphDK] - Отправлен перевод (Line: 10) [translate.py]
+INFO (13/04/2024 06:53:42): [@EpitaphDK] - Отправлен перевод (Line: 10) [translate.py]
+INFO (13/04/2024 06:53:55): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 06:54:00): [@alexanderseriously] - Отправлен перевод (Line: 10) [translate.py]
+INFO (13/04/2024 06:54:06): [@alexanderseriously] - Отправлен перевод (Line: 10) [translate.py]
+INFO (13/04/2024 06:54:16): [@EpitaphDK] - Отправлен перевод (Line: 10) [translate.py]
+INFO (13/04/2024 06:54:29): [@rydkinegor] - Отправлен перевод (Line: 10) [translate.py]
+INFO (13/04/2024 06:54:42): [@EpitaphDK] - Отправлен перевод (Line: 10) [translate.py]
+INFO (13/04/2024 06:55:07): BebraBGBot запущен... (Line: 7) [bot_run.py]
+ERROR (13/04/2024 06:55:17): Infinity polling exception: The function yandex() has been not certified yet. Please read for details: Status of Translator on this webpage(https://github.com/UlionTse/translators#supported-translation-services). (Line: 1021) [__init__.py]
+ERROR (13/04/2024 06:55:17): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 2206, in get_sid
+    sid_find = re.compile("SID: '(.*?)',").findall(host_html)[0]
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 296, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 117, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 288, in _wrapper
+    return func(*args, **{**kwargs, **{'query_text': query_text}})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 2281, in yandex_api
+    self.sid = self.get_sid(host_html)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 2212, in get_sid
+    raise TranslatorError(str(e))
+translators.server.TranslatorError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1016, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1104, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1179, in __threaded_polling
+    raise e
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\handlers\commands.py", line 38, in translate
+    translate_message(bot, message, log)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\translate.py", line 6, in translate_message
+    tr_result = ts.translate_text(tr_msg, to_language='ru', translator='yandex')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 5469, in translate_text
+    return self.translators_dict[translator](query_text=query_text, from_language=from_language, to_language=to_language, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\translators\server.py", line 301, in _wrapper
+    raise TranslatorError(f'{raise_tips1} {raise_tips2}')
+translators.server.TranslatorError: The function yandex() has been not certified yet. Please read for details: Status of Translator on this webpage(https://github.com/UlionTse/translators#supported-translation-services).
+ (Line: 1023) [__init__.py]
+INFO (13/04/2024 06:55:44): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 06:56:08): [@alexanderseriously] - Отправлен перевод (Line: 10) [translate.py]
+INFO (13/04/2024 06:58:05): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 06:58:21): [@alexanderseriously] - Отправлен перевод (Line: 10) [translate.py]
+INFO (13/04/2024 06:58:58): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 06:59:39): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 06:59:51): [@alexanderseriously] - Отправлен перевод (Line: 10) [translate.py]
+INFO (13/04/2024 07:08:46): [@vAm_pir3] - Отправлен перевод (Line: 10) [translate.py]
+INFO (13/04/2024 07:44:27): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 07:48:03): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 07:52:30): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 07:53:02): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 07:54:08): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 07:54:38): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 08:03:37): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 08:25:51): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 08:26:34): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 08:34:14): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 08:41:45): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 09:26:19): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 09:26:21): [@EpitaphDK] - Запустил бота / Использовал помощь (Line: 25) [start.py]
+INFO (13/04/2024 09:26:40): [@EpitaphDK] - Узнал ID фото: 'AgACAgQAAx0CfrvTFgACEH1mGs5xctz-Jaojq5C7cczIi3oWdwACPsExG2b72FB3kgKkC5QTMwEAAwIAA3kAAzQE' (Line: 8) [photo_id.py]
+INFO (13/04/2024 10:29:36): [@meavxxx] - Запустил бота / Использовал помощь (Line: 25) [start.py]
+INFO (14/04/2024 12:41:16): BebraBGBot запущен... (Line: 7) [bot_run.py]
+ERROR (14/04/2024 12:41:29): Infinity polling exception: 'str' object has no attribute 'info' (Line: 1021) [__init__.py]
+ERROR (14/04/2024 12:41:29): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1016, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1104, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1179, in __threaded_polling
+    raise e
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\handlers\commands.py", line 69, in reply_check
+    photo_sl_get(bot, message, base_dir, log)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\shakal.py", line 12, in photo_sl_get
+    log.info(f"[@{message.from_user.username}] - Обработка изображения...")
+    ^^^^^^^^
+AttributeError: 'str' object has no attribute 'info'
+ (Line: 1023) [__init__.py]
+INFO (14/04/2024 12:44:04): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (14/04/2024 12:44:15): [@alexanderseriously] - Обработка изображения... (Line: 12) [shakal.py]
+INFO (14/04/2024 12:44:47): [@GroupAnonymousBot] - Обработка изображения... (Line: 12) [shakal.py]
+INFO (14/04/2024 12:47:22): [@GroupAnonymousBot] - Обработка изображения... (Line: 12) [shakal.py]
+INFO (14/04/2024 12:48:20): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (14/04/2024 12:49:12): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (14/04/2024 12:49:41): [@GroupAnonymousBot] - Обработка изображения... (Line: 12) [shakal.py]
+INFO (14/04/2024 12:50:03): [@GroupAnonymousBot] - Обработка изображения... (Line: 12) [shakal.py]
+INFO (14/04/2024 12:57:22): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (14/04/2024 12:57:32): [@alexanderseriously] - Обработка изображения... (Line: 12) [shakal.py]
+INFO (14/04/2024 12:59:52): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (14/04/2024 01:00:17): [@alexanderseriously] - Обработка изображения... (Line: 12) [shakal.py]
+INFO (14/04/2024 01:06:26): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (14/04/2024 01:06:35): [@alexanderseriously] - Обработка изображения... (Line: 12) [shakal.py]
+INFO (14/04/2024 01:08:43): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (14/04/2024 01:08:57): [@alexanderseriously] - Обработка изображения... (Line: 12) [shakal.py]

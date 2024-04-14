@@ -7,5 +7,3 @@ def photo_id_send(bot, message, log):
     
     log.info(f"[@{message.from_user.username}] - Узнал ID фото: '{pid}'")
     
-def photo_id_except(bot, message):
-    bot.reply_to(message, "Отправь мне изображение в ответ, балбес")

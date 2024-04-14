@@ -33,9 +33,6 @@ def photo_stk_get(bot, message, base_dir, log):
         bot.edit_message_text(message.chat.id, get.message_id, "❌ Ошибка получения изображения!")
         log.exception("Ошибка скачивания фото: ", e)
     
-def photo_stk_except(bot, message):
-    bot.reply_to(message, "Отправь мне изображение в ответ, балбес")
-    
 def photo_process(bot, message, input_path, output_path, process, log):
     try:
         # Открываем изображение
