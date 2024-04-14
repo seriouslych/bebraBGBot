@@ -22,3 +22,5 @@ Traceback (most recent call last):
     test_message(bot, message)
 TypeError: test_message() missing 1 required positional argument: 'log'
  (Line: 1023) [__init__.py]
+INFO (13/04/2024 06:28:30): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (13/04/2024 06:28:35): [@alexanderseriously] - TEST - BebraBGBot v0.5 alpha (Line: 22) [test.py]
