@@ -266,3 +266,534 @@ INFO (14/04/2024 01:06:26): BebraBGBot запущен... (Line: 7) [bot_run.py]
 INFO (14/04/2024 01:06:35): [@alexanderseriously] - Обработка изображения... (Line: 12) [shakal.py]
 INFO (14/04/2024 01:08:43): BebraBGBot запущен... (Line: 7) [bot_run.py]
 INFO (14/04/2024 01:08:57): [@alexanderseriously] - Обработка изображения... (Line: 12) [shakal.py]
+INFO (15/04/2024 06:06:43): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (15/04/2024 06:06:45): [@alexanderseriously] - Запустил бота / Использовал помощь (Line: 25) [start.py]
+ERROR (15/04/2024 06:06:45): Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to reply not found (Line: 1147) [__init__.py]
+ERROR (15/04/2024 06:06:45): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\handlers\commands.py", line 17, in start
+    start_message(bot, message, log)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\start.py", line 10, in start_message
+    bot.reply_to(message,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 5266, in reply_to
+    return self.send_message(message.chat.id, text, reply_parameters=reply_parameters, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1673, in send_message
+    apihelper.send_message(
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 264, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 164, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 191, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to reply not found
+ (Line: 1149) [__init__.py]
+INFO (15/04/2024 06:06:46): [@illusionere] - Запустил бота / Использовал помощь (Line: 25) [start.py]
+INFO (15/04/2024 06:06:56): [@alexanderseriously] - Обработка изображения... (Line: 12) [shakal.py]
+INFO (15/04/2024 06:07:44): [@TheLastTerka] - Узнал ID фото: 'AgACAgIAAx0Cff1e_QABATPkZh1C1YQxM8CO3CXRWZZnAUKCdnsAAk_aMRuo9ulIQdIxIQtMW1QBAAMCAAN4AAM0BA' (Line: 8) [photo_id.py]
+INFO (15/04/2024 06:08:33): [@Negrvitalik] - Набебрил. (Line: 6) [bebra.py]
+INFO (15/04/2024 06:18:20): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (15/04/2024 06:18:26): [@alexanderseriously] - Сжатие изображения... (Line: 12) [shakal.py]
+INFO (15/04/2024 06:20:23): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (15/04/2024 06:26:50): [@alexanderseriously] - Сжатие изображения... (Line: 12) [shakal.py]
+INFO (15/04/2024 06:36:21): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (15/04/2024 06:36:35): [@alexanderseriously] - Сжатие изображения... (Line: 12) [shakal.py]
+INFO (15/04/2024 06:37:11): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (15/04/2024 06:37:15): [@alexanderseriously] - Сжатие изображения... (Line: 12) [shakal.py]
+INFO (15/04/2024 06:37:15): Путь исходника: 'd:\!Projects\Bots\Telegram\bebraBGBot\temp\photo.jpg' (Line: 25) [shakal.py]
+INFO (15/04/2024 06:39:58): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (15/04/2024 06:40:15): [@alexanderseriously] - Сжатие изображения... (Line: 12) [shakal.py]
+INFO (15/04/2024 06:40:15): Путь исходника: 'd:\!Projects\Bots\Telegram\bebraBGBot\temp\photo.jpg' (Line: 25) [shakal.py]
+INFO (15/04/2024 06:40:15): Путь к результату: 'd:\!Projects\Bots\Telegram\bebraBGBot\temp\shakal.jpg' (Line: 26) [shakal.py]
+INFO (15/04/2024 06:47:06): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (15/04/2024 06:47:16): [@alexanderseriously] - Сжатие изображения... (Line: 12) [shakal.py]
+INFO (15/04/2024 06:47:20): [@alexanderseriously] - Фото сжато и отправлено. (Line: 56) [shakal.py]
+INFO (15/04/2024 06:47:40): [@alexanderseriously] - Сжатие изображения... (Line: 12) [shakal.py]
+INFO (15/04/2024 06:47:43): [@alexanderseriously] - Фото сжато и отправлено. (Line: 56) [shakal.py]
+INFO (15/04/2024 06:48:00): [@shofruckt] - Сжатие изображения... (Line: 12) [shakal.py]
+INFO (15/04/2024 06:48:04): [@shofruckt] - Фото сжато и отправлено. (Line: 56) [shakal.py]
+INFO (15/04/2024 06:48:37): [@alexanderseriously] - Обработка стикера... (Line: 12) [sticker.py]
+INFO (15/04/2024 06:48:41): [@alexanderseriously] - Стикер обработан и отправлен. (Line: 76) [sticker.py]
+INFO (15/04/2024 06:49:06): [@vAm_pir3] - Обработка стикера... (Line: 12) [sticker.py]
+INFO (15/04/2024 06:49:11): [@vAm_pir3] - Стикер обработан и отправлен. (Line: 76) [sticker.py]
+INFO (15/04/2024 06:49:26): [@GroupAnonymousBot] - Сжатие изображения... (Line: 12) [shakal.py]
+INFO (15/04/2024 06:49:26): [@alexanderseriously] - Сжатие изображения... (Line: 12) [shakal.py]
+INFO (15/04/2024 06:49:29): [@GroupAnonymousBot] - Фото сжато и отправлено. (Line: 56) [shakal.py]
+INFO (15/04/2024 06:49:44): [@GroupAnonymousBot] - Сжатие изображения... (Line: 12) [shakal.py]
+INFO (15/04/2024 06:49:58): [@GroupAnonymousBot] - Фото сжато и отправлено. (Line: 56) [shakal.py]
+INFO (15/04/2024 07:15:13): BebraBGBot запущен... (Line: 7) [bot_run.py]
+ERROR (15/04/2024 07:15:14): Infinity polling exception: name 'lang_name' is not defined (Line: 1021) [__init__.py]
+ERROR (15/04/2024 07:15:14): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1016, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1104, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1179, in __threaded_polling
+    raise e
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\handlers\commands.py", line 74, in reply_check
+    if message.reply_to_message.text == f"Выбранный язык: {lang_name}":
+                                                           ^^^^^^^^^
+NameError: name 'lang_name' is not defined
+ (Line: 1023) [__init__.py]
+ERROR (15/04/2024 07:15:17): Infinity polling exception: name 'lang_name' is not defined (Line: 1021) [__init__.py]
+ERROR (15/04/2024 07:15:17): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1016, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1104, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1179, in __threaded_polling
+    raise e
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\handlers\commands.py", line 74, in reply_check
+    if message.reply_to_message.text == f"Выбранный язык: {lang_name}":
+                                                           ^^^^^^^^^
+NameError: name 'lang_name' is not defined
+ (Line: 1023) [__init__.py]
+INFO (15/04/2024 07:38:15): BebraBGBot запущен... (Line: 7) [bot_run.py]
+ERROR (15/04/2024 07:38:16): Infinity polling exception: TranslatorsServer.translate_text() got multiple values for argument 'translator' (Line: 1021) [__init__.py]
+ERROR (15/04/2024 07:38:16): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1016, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1104, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1179, in __threaded_polling
+    raise e
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\handlers\commands.py", line 40, in translate
+    translate_message(bot, message, log)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\translate.py", line 6, in translate_message
+    tr_result = ts.translate_text(tr_msg, 'ru', translator='google')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TranslatorsServer.translate_text() got multiple values for argument 'translator'
+ (Line: 1023) [__init__.py]
+ERROR (15/04/2024 07:38:19): Infinity polling exception: TranslatorsServer.translate_text() got multiple values for argument 'translator' (Line: 1021) [__init__.py]
+ERROR (15/04/2024 07:38:19): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1016, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1104, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1179, in __threaded_polling
+    raise e
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\handlers\commands.py", line 40, in translate
+    translate_message(bot, message, log)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\translate.py", line 6, in translate_message
+    tr_result = ts.translate_text(tr_msg, 'ru', translator='google')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TranslatorsServer.translate_text() got multiple values for argument 'translator'
+ (Line: 1023) [__init__.py]
+INFO (15/04/2024 07:39:28): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (15/04/2024 07:39:31): [@alexanderseriously] - Отправлен перевод (Line: 10) [translate.py]
+INFO (15/04/2024 07:39:46): [@alexanderseriously] - Отправлен перевод (Line: 10) [translate.py]
+INFO (15/04/2024 07:42:07): [@alexanderseriously] - Запустил бота / Использовал помощь (Line: 25) [start.py]
+INFO (15/04/2024 07:42:20): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (15/04/2024 07:42:25): [@alexanderseriously] - Запустил бота / Использовал помощь (Line: 25) [start.py]
+INFO (15/04/2024 07:43:18): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (15/04/2024 07:54:05): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (15/04/2024 07:55:31): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (15/04/2024 07:57:30): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (15/04/2024 07:58:07): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (15/04/2024 08:02:04): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (15/04/2024 08:03:36): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (15/04/2024 08:03:50): [@alexanderseriously] - Сжатие изображения... (Line: 12) [shakal.py]
+INFO (15/04/2024 08:03:53): [@alexanderseriously] - Фото сжато и отправлено. (Line: 56) [shakal.py]
+INFO (15/04/2024 08:03:59): [@alexanderseriously] - Сжатие изображения... (Line: 12) [shakal.py]
+INFO (15/04/2024 08:04:02): [@alexanderseriously] - Фото сжато и отправлено. (Line: 56) [shakal.py]
+INFO (15/04/2024 08:04:07): [@alexanderseriously] - Сжатие изображения... (Line: 12) [shakal.py]
+INFO (15/04/2024 08:04:11): [@alexanderseriously] - Фото сжато и отправлено. (Line: 56) [shakal.py]
+INFO (15/04/2024 08:07:54): BebraBGBot запущен... (Line: 7) [bot_run.py]
+ERROR (15/04/2024 08:47:31): Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25) (Line: 1021) [__init__.py]
+ERROR (15/04/2024 08:47:31): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 537, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 466, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1423, in getresponse
+    response.begin()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 1252, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 1104, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 539, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 370, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1016, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1104, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1179, in __threaded_polling
+    raise e
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1140, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 110, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 661, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 633, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 158, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+ (Line: 1023) [__init__.py]
+INFO (24/04/2024 09:04:53): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (24/04/2024 09:05:12): [@alexanderseriously] - Обработка стикера... (Line: 12) [sticker.py]
+INFO (24/04/2024 09:05:16): [@alexanderseriously] - Стикер обработан и отправлен. (Line: 76) [sticker.py]
+INFO (24/04/2024 10:12:37): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (24/04/2024 10:12:59): [@alexanderseriously] - Обработка стикера... (Line: 12) [sticker.py]
+INFO (24/04/2024 10:13:03): [@alexanderseriously] - Стикер обработан и отправлен. (Line: 76) [sticker.py]
+INFO (25/04/2024 06:04:58): BebraBGBot запущен... (Line: 7) [bot_run.py]
+ERROR (25/04/2024 06:05:10): Infinity polling exception: video_dl_message() missing 1 required positional argument: 'base_dir' (Line: 1021) [__init__.py]
+ERROR (25/04/2024 06:05:10): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1016, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1104, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1179, in __threaded_polling
+    raise e
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\handlers\commands.py", line 49, in video_dl
+    video_dl_message(bot, message, log)
+TypeError: video_dl_message() missing 1 required positional argument: 'base_dir'
+ (Line: 1023) [__init__.py]
+INFO (25/04/2024 06:05:31): BebraBGBot запущен... (Line: 7) [bot_run.py]
+ERROR (25/04/2024 06:05:44): Infinity polling exception: 'int' object has no attribute 'message_id' (Line: 1021) [__init__.py]
+ERROR (25/04/2024 06:05:44): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1016, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1104, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1179, in __threaded_polling
+    raise e
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\handlers\commands.py", line 49, in video_dl
+    video_dl_message(bot, message, log, base_dir)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\video_dl.py", line 9, in video_dl_message
+    msg = bot.reply_to(message.chat.id, f"⏩ Отправка {url}...", disable_web_page_preview=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 5262, in reply_to
+    message.message_id,
+    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'message_id'
+ (Line: 1023) [__init__.py]
+INFO (25/04/2024 06:06:11): BebraBGBot запущен... (Line: 7) [bot_run.py]
+ERROR (25/04/2024 06:06:12): Infinity polling exception: 'int' object has no attribute 'message_id' (Line: 1021) [__init__.py]
+ERROR (25/04/2024 06:06:12): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1016, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1104, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1179, in __threaded_polling
+    raise e
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\handlers\commands.py", line 49, in video_dl
+    video_dl_message(bot, message, log, base_dir)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\video_dl.py", line 9, in video_dl_message
+    msg = bot.reply_to(message.chat.id, f"⏩ Отправка {url}...", disable_web_page_preview=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 5262, in reply_to
+    message.message_id,
+    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'message_id'
+ (Line: 1023) [__init__.py]
+INFO (25/04/2024 06:07:30): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (25/04/2024 06:07:38): [@alexanderseriously] - Получено видео... (Line: 11) [video_dl.py]
+ERROR (25/04/2024 06:07:38): Infinity polling exception: cannot access local variable 'download' where it is not associated with a value (Line: 1021) [__init__.py]
+ERROR (25/04/2024 06:07:38): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1016, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1104, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1179, in __threaded_polling
+    raise e
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\handlers\commands.py", line 49, in video_dl
+    video_dl_message(bot, message, log, base_dir)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\video_dl.py", line 13, in video_dl_message
+    download = video_download(bot, message, log, base_dir, url, download, msg)
+                                                                ^^^^^^^^
+UnboundLocalError: cannot access local variable 'download' where it is not associated with a value
+ (Line: 1023) [__init__.py]
+INFO (25/04/2024 06:18:40): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (25/04/2024 06:18:45): [@alexanderseriously] - Получено видео... (Line: 10) [video_dl.py]
+ERROR (25/04/2024 06:18:51): Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found (Line: 1147) [__init__.py]
+ERROR (25/04/2024 06:18:51): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\handlers\commands.py", line 49, in video_dl
+    video_dl_message(bot, message, log, base_dir)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\youtube_download\video_dl.py", line 14, in video_dl_message
+    video_dl_send(bot, message, log, download, msg)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\youtube_download\video_dl.py", line 21, in video_dl_send
+    bot.edit_message_text(message.chat.id, msg.message_id, "✅ Готово!")
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 4455, in edit_message_text
+    result = apihelper.edit_message_text(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 1308, in edit_message_text
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 164, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 191, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+ (Line: 1149) [__init__.py]
+INFO (25/04/2024 06:20:57): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (25/04/2024 06:20:59): [@alexanderseriously] - Получено видео... (Line: 10) [video_dl.py]
+ERROR (25/04/2024 06:21:03): Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found (Line: 1147) [__init__.py]
+ERROR (25/04/2024 06:21:03): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\handlers\commands.py", line 49, in video_dl
+    video_dl_message(bot, message, log, base_dir)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\youtube_download\video_dl.py", line 14, in video_dl_message
+    video_dl_send(bot, message, log, download, msg)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\youtube_download\video_dl.py", line 19, in video_dl_send
+    bot.send_video(message, video_file, supports_streaming=True, width=1920, height=1080)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 2696, in send_video
+    apihelper.send_video(
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 710, in send_video
+    return _make_request(token, method_url, params=payload, files=files, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 164, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 191, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+ (Line: 1149) [__init__.py]
+INFO (25/04/2024 06:21:55): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (25/04/2024 06:21:56): [@alexanderseriously] - Получено видео... (Line: 10) [video_dl.py]
+ERROR (25/04/2024 06:22:00): Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found (Line: 1147) [__init__.py]
+ERROR (25/04/2024 06:22:00): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\handlers\commands.py", line 49, in video_dl
+    video_dl_message(bot, message, log, base_dir)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\youtube_download\video_dl.py", line 14, in video_dl_message
+    video_dl_send(bot, message, log, download, msg)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\youtube_download\video_dl.py", line 21, in video_dl_send
+    bot.edit_message_text(message.chat.id, msg.message_id, "✅ Готово!")
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 4455, in edit_message_text
+    result = apihelper.edit_message_text(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 1308, in edit_message_text
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 164, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\apihelper.py", line 191, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+ (Line: 1149) [__init__.py]
+INFO (25/04/2024 06:23:51): [@alexanderseriously] - Обработка стикера... (Line: 12) [sticker.py]
+INFO (25/04/2024 06:23:54): [@alexanderseriously] - Стикер обработан и отправлен. (Line: 76) [sticker.py]
+INFO (25/04/2024 06:24:04): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (25/04/2024 06:24:17): [@alexanderseriously] - Получено видео... (Line: 10) [video_dl.py]
+INFO (25/04/2024 06:24:25): [@alexanderseriously] - Видео успешно скачано! (Line: 25) [video_dl.py]
+INFO (25/04/2024 06:27:56): [@alexanderseriously] - Получено видео... (Line: 10) [video_dl.py]
+INFO (25/04/2024 06:28:02): [@alexanderseriously] - Видео успешно скачано! (Line: 25) [video_dl.py]
+INFO (25/04/2024 06:38:42): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (25/04/2024 06:38:47): [@alexanderseriously] - Получено видео... (Line: 10) [audio_dl.py]
+INFO (25/04/2024 06:38:57): [@alexanderseriously] - Аудио успешно скачано! (Line: 25) [audio_dl.py]
+INFO (25/04/2024 06:42:26): [@alexanderseriously] - Получено видео... (Line: 10) [video_dl.py]
+INFO (25/04/2024 06:42:32): [@alexanderseriously] - Видео успешно скачано! (Line: 25) [video_dl.py]
+INFO (25/04/2024 06:43:41): [@alexanderseriously] - Получено видео... (Line: 10) [audio_dl.py]
+INFO (25/04/2024 06:43:48): [@alexanderseriously] - Аудио успешно скачано! (Line: 25) [audio_dl.py]
+INFO (25/04/2024 06:46:00): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (25/04/2024 06:46:45): [@alexanderseriously] - Запустил бота / Использовал помощь (Line: 27) [start.py]
+INFO (25/04/2024 06:50:00): [@alexanderseriously] - Запустил бота / Использовал помощь (Line: 27) [start.py]
+INFO (25/04/2024 06:50:41): BebraBGBot запущен... (Line: 7) [bot_run.py]
+INFO (25/04/2024 06:50:44): [@alexanderseriously] - Запустил бота / Использовал помощь (Line: 27) [start.py]
+ERROR (25/04/2024 06:50:52): Infinity polling exception: list index out of range (Line: 1021) [__init__.py]
+ERROR (25/04/2024 06:50:52): Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1016, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1104, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1179, in __threaded_polling
+    raise e
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\util.py", line 92, in run
+    task(*args, **kwargs)
+  File "C:\Users\Alexandru\AppData\Local\Programs\Python\Python312\Lib\site-packages\telebot\__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\handlers\commands.py", line 42, in translate
+    translate_message(bot, message, log)
+  File "d:\!Projects\Bots\Telegram\bebraBGBot\commands\translate.py", line 4, in translate_message
+    tr_msg = f'{message.text.split(maxsplit=1)[1]}'
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+ (Line: 1023) [__init__.py]
+INFO (25/04/2024 06:50:56): [@alexanderseriously] - TEST - BebraBGBot v0.9 alpha (Line: 22) [test.py]
+INFO (25/04/2024 06:51:13): [@alexanderseriously] - Отправлен перевод (Line: 10) [translate.py]
+INFO (25/04/2024 07:01:57): [@alexanderseriously] - Отправлен перевод (Line: 10) [translate.py]

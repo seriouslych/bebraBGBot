@@ -9,7 +9,7 @@ def shakal_message(bot, message, cancel_inline):
 def photo_sl_get(bot, message, log, base_dir):
     get = bot.reply_to(message, "🛜 Получение изображения...")
     
-    log.info(f"[@{message.from_user.username}] - Обработка изображения...")
+    log.info(f"[@{message.from_user.username}] - Сжатие изображения...")
     try:
         file_info = bot.get_file(message.photo[-1].file_id)
         photo_download = bot.download_file(file_info.file_path)
@@ -25,25 +25,27 @@ def photo_sl_get(bot, message, log, base_dir):
         time.sleep(1.5)
         got = bot.edit_message_text("✅ Изображение получено", message.chat.id, get.message_id)
         time.sleep(1)
-        bot.edit_message_text("🔄 Обработка изображения...", message.chat.id, got.message_id)
+        process = bot.edit_message_text("🔄 Обработка изображения...", message.chat.id, got.message_id)
     except Exception as e:
         log.exception("Ошибка при получении изображения: ", e)
+        
+    photo_compress(bot, message, input_path, output_path, process, log) # саша ну ебать ты даун ХАХАХАХАХА
 
-# Павел дуров иди нахуй пидорас ебаный я твой рот ебал петушаара ебливый 👿
+    # Павел дуров иди нахуй пидорас ебаный я твой рот ебал петушаара ебливый 👿
         
 def photo_compress(bot, message, input_path, output_path, process, log):
     try:
         # Я ГРАЖДАНСКИЙ Я ГРАЖДАНСКИЙ 🔫🔫🔫💥💥💥
             
-        img = Image.open('D:/!Projects/Bots/Telegram/bebraBGBot/temp/photo.jpg')
+        img = Image.open(input_path)
         
-        img.load()
+        img.load
         
         img.save(output_path, quality=10)
         
         photo_sl_send(bot, message, input_path, output_path, process, log)
     except Exception as e:
-        log.exception("Ошибка сжатия файла: ", e)
+        log.exception("Ошибка сжатия файла: ", e)   
     
 def photo_sl_send(bot, message, input_path, output_path, process, log):
     bot.edit_message_text("✅ Готово!", message.chat.id, process.message_id)

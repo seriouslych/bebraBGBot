@@ -7,9 +7,10 @@ from commands.user_id import uid_message
 from commands.test import test_message
 from commands.translate import translate_message
 from commands.shakal import shakal_message, photo_sl_get
+from commands.youtube_download.video_dl import video_dl_message
+from commands.youtube_download.audio_dl import audio_dl_message
 
-
-from handlers.keyboards import cancel_inline, lang_inline
+from handlers.keyboards import cancel_inline
 
 def commands(bot, base_dir, log):
     @bot.message_handler(commands=['start', 'help'], content_types=['text'])
@@ -38,12 +39,20 @@ def commands(bot, base_dir, log):
         
     @bot.message_handler(commands=['tr'])
     def translate(message):
-        translate_message(bot, message, log, lang_inline)
+        translate_message(bot, message, log)
         
     @bot.message_handler(commands=['sl'])
     def shakal(message):
         shakal_message(bot, message, cancel_inline)
         
+    @bot.message_handler(commands=['vid'])
+    def video_dl(message):
+        video_dl_message(bot, message, log, base_dir)
+        
+    @bot.message_handler(commands=['aud'])
+    def audio_dl(message):
+        audio_dl_message(bot, message, log, base_dir)
+
     @bot.message_handler(content_types=['text', 'photo', 'document', 'audio'])
     def reply_check(message):
         if message.reply_to_message:
@@ -69,3 +78,4 @@ def commands(bot, base_dir, log):
                         photo_sl_get(bot, message, log, base_dir)
                     else:
                         photo_except(bot, message)
+                        
