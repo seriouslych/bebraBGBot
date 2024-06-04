@@ -9,6 +9,10 @@ from commands.translate import translate_message
 from commands.shakal import shakal_message, photo_sl_get
 from commands.youtube_download.video_dl import video_dl_message
 from commands.youtube_download.audio_dl import audio_dl_message
+from commands.wiki import wiki_message
+
+from commands.games.hangman.hangman import HangmanGame
+from commands.games.hangman.hangman_msg import hm_start, hm_game
 
 from handlers.keyboards import cancel_inline
 
@@ -52,6 +56,14 @@ def commands(bot, base_dir, log):
     @bot.message_handler(commands=['aud'])
     def audio_dl(message):
         audio_dl_message(bot, message, log, base_dir)
+        
+    @bot.message_handler(commands=['wiki'])
+    def wiki(message):
+        wiki_message(bot, message, log)
+        
+    @bot.message_handler(commands=['hm'])
+    def hangman(message):
+        hm_start(bot, message)
 
     @bot.message_handler(content_types=['text', 'photo', 'document', 'audio'])
     def reply_check(message):
@@ -79,3 +91,5 @@ def commands(bot, base_dir, log):
                     else:
                         photo_except(bot, message)
                         
+            if message.reply_to_message and message.reply_to_message.from_user.id == bot.get_me().id:
+                hm_game(bot, message)
